@@ -154,8 +154,8 @@ var layout = {
       y: .53
     }
   ],
-  // height: 300,
-  // width: 300,
+  height: 300,
+  width: 300,
   margin: {"t": 0, "b": 0, "l": 0, "r": 0},
   showlegend: false,
   grid: {rows: 0, columns: 0},
