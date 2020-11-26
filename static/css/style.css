@@ -1,0 +1,225 @@
+html,
+body {
+    height: 100%
+}
+
+
+.vertical-center {
+    min-height: 100%;
+    min-height: 100vh;
+
+    text-align: center;
+    font: 0/0 a;
+}
+
+.full-width-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+.container-fluid {
+    height: 100%;
+    overflow-y: hidden;
+    /* min-width:960px;
+    min-height:600px; */
+}
+
+/* ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    border-bottom: none;
+    /* text-decoration: underline;
+    border: 1px solid black; 
+    padding: 10px;
+}
+
+li:hover {
+    cursor: pointer;
+    color: lightgrey;
+}
+
+nav {
+    display: block;
+    color: white;
+    background: grey;
+    width: 700px;
+}
+
+@media screen and (min-width:700px) {
+    nav {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav,
+    ul {
+        display: flex;
+        background: grey;
+    }
+
+    li {
+        transition: color 1s ease-in;
+    }
+
+    li:hover {
+        color: #404040;
+    }
+} */
+
+
+
+/* .square:before{
+    content: "";
+    display: block;
+    padding-top: 100%;  /* initial ratio of 1:1
+} */
+
+/* .square {
+    height: 1000px;
+    width:  1000px;
+  } */
+
+#row-1 {
+    min-height: 1024px;
+    background-color: white;
+    border: white;
+    border-style: solid;
+    border-width: 1 1 1 1;
+}
+#col-1A {
+    height: 100%;
+    background-color: white;
+    border: white;
+    border-style: solid;
+    border-width: 1 1 1 1;
+}
+
+#a {
+    min-height: 565px;
+    background-color: white;
+    border: grey;
+    border-style: solid;
+    border-width: 12px 12px 12px 12px;
+}
+
+#col-1B {
+    min-height: 600px;
+    /* background-color: blue;
+    border: grey;
+    border-style: solid;
+    border-width:12px 12px 12px 0;*/
+}
+
+#C-row {
+    min-height: 100px;
+    background-color: white;
+    border: white;
+    border-style: solid;
+    border-width: 1 1 1 1;
+}
+
+#c {
+    min-height: 30px;
+    background-color: white;
+    border: grey;
+    border-style: solid;
+    border-width: 12px 12px 12px 12px;
+}
+
+#D-row {
+    min-height: 600px;
+    border: white;
+    border-style: solid;
+    border-width: 0 0 0 0;
+}
+/* Cholorpleth Map */
+#D-col-1{
+    min-height: 100%;
+    background-color: white;
+    border: white;
+    border-style: solid;
+    border-width:0 0 0 0;
+}
+#D-row-1 {
+    min-height: 100%;
+    background-color: white;
+    border: white;
+    border-style: solid;
+    border-width: 0 0 0 0;
+}
+
+#D-col-1a {
+    min-height: 100%;
+    background-color: white;
+    border: grey;
+    border-style: solid;
+    border-width: 0 0 0 0;
+}
+/* Voters Chart and Pie Chart */
+#D-col-2 {
+    min-height: 100%;
+    background-color: white;
+    border: silver;
+    border-style: solid;
+    border-width: 12px 12px 12px 12px;
+}
+#D-row-2a{
+    min-height:25%;
+}
+#D-col-2a {
+    /* min-height: 25%; */
+    background-color: white;
+    border: grey;
+    border-style: solid;
+    border-width: 0 0 0 0;
+}
+#votersTable {
+    min-height:25%;
+    width: auto;
+    }
+/* Pie Chart Square */
+#D-row-2b {
+    height:75%;
+    background-color: silver;
+    border: grey;
+    border-style: solid;
+    border-width: 1 1 1 1;
+}
+#D-col-2b{
+    /* min-height: 100%; */
+    background-color: white;
+    border: grey;
+    border-style: solid;
+    border-width: 0 0 0 0;
+}
+
+#E-row {
+    /* min-height: 151.5px; */
+    /* background-color:#0058a4; */
+    border: white;
+    border-style: solid;
+    border-width: 1, 1, 1, 1;
+}
+
+#E-col-1 {
+    /* min-height: 151.5px; */
+    background-color: silver;
+    border: grey;
+    border-style: solid;
+    border-width: 9px 9px 9px 9px;
+}
+
+#E-col-2 {
+    /* min-height: 151.5px; */
+    background-color: silver;
+    border: grey;
+    border-style: solid;
+    border-width: 9px 9px 9px 9px;
+}

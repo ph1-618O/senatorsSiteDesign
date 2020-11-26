@@ -74,7 +74,7 @@ span.CharOverride-2 {
 	-webkit-transform-origin:0% 0%;
 	height:30.00px;
 	left:0px;
-	position:absolute;
+	position:sticky;
 	top:0px;
 	transform:translate(204.061px,43.056px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
 	transform:translate(204.061px,43.056px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
@@ -113,10 +113,6 @@ span.CharOverride-2 {
 	width:353.00px;
 }
 #_idContainer006 {
-	-ms-transform:translate(204.061px,83.306px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-ms-transform-origin:0% 0%;
-	-webkit-transform:translate(204.061px,83.306px) rotate(0.000deg) skew(0.000deg) scale(1.000,1.000);
-	-webkit-transform-origin:0% 0%;
 	height:312.50px;
 	left:0px;
 	position:absolute;

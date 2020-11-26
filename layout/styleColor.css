@@ -1,0 +1,147 @@
+
+html, body{
+    height:100%
+}
+
+
+.vertical-center{
+    min-height: 100%;
+    min-height: 100vh;
+
+    text-align: center;
+    font: 0/0 a;
+}
+.full-width-div {
+    position: relative;
+    width: 100%;
+    height:100%;
+    left: 0;
+}
+
+.container-fluid{
+    height: 100%;
+    overflow-y: hidden;
+    /* min-width:960px;
+    min-height:600px; */
+}
+
+
+/* .square:before{
+    content: "";
+    display: block;
+    padding-top: 100%;  /* initial ratio of 1:1
+} */
+
+/* .square {
+    height: 1000px;
+    width:  1000px;
+  } */
+#col-1A {
+    background-color: white;
+    border: white;
+    border-style: solid;
+    border-width:1 1 1 1;
+}
+
+#a {
+    min-height: 565px;
+    background-color: white;
+    border: grey;
+    border-style: solid;
+    border-width:12px 12px 12px 12px;
+}
+#col-1B {
+    min-height: 513.25px;
+    /* background-color: blue;
+    border: grey;
+    border-style: solid;
+    border-width:12px 12px 12px 0; */
+}
+#C-row {
+    min-height: 30px;
+    background-color: white;
+    border:white;
+    border-style: solid;
+    border-width:1 1 1 1;
+}
+#c {
+    background-color: white;
+    border: grey; 
+    border-style: solid;
+    border-width: 12px 12px 12px 12px;
+}
+#D-row {
+    border: white;
+    border-style: solid;
+    border-width: 1 1 1 1; 
+}
+
+#D-row-1 {
+    background-color: blue;
+    border: white; 
+    border-style: solid;
+    border-width: 1 1 1 1;  
+}
+
+#D-col-1a {
+    min-height:331.75px;
+    background-color: #f3e468;
+    border: grey; 
+    border-style: solid;
+    border-width: 12px 12px 12px 12px; 
+}
+
+#D-col-2 {
+    min-height:331.75px;
+    background-color: fuchsia;
+    border:white; 
+    border-style: solid;
+    border-width: 1 1 1 1;
+}
+
+#D-col-2a {
+    min-height:81.75px;
+    background-color: orange;
+    border: grey; 
+    border-style: solid;
+    border-width: 12px 12px 12px 12px;
+}
+
+#D-col-2b {
+    min-height: 250px;
+    background-color: orangered;
+    border:grey; 
+    border-style: solid;
+    border-width: 12px 12px 12px 12px;
+}
+
+
+
+#E-row {
+    min-height: 151.5px;
+    /* background-color:#0058a4; */
+    border: white;
+    border-style: solid;
+    border-width: 1,1,1,1;
+}
+
+#E-col-1 {
+    min-height: 151.5px;
+    background-color:purple;
+    border: grey;
+    border-style: solid;
+    border-width:9px 9px 9px 9px;
+}
+
+#E-col-2 {
+    min-height: 151.5px;
+    background-color:pink;
+    border: grey;
+    border-style: solid;
+    border-width:9px 9px 9px 9px;
+}
+
+
+
+
+
