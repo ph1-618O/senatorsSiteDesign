@@ -26,7 +26,11 @@ body {
     min-height:600px; */
 }
 
-/* ul,
+#ml{
+    margin-left: .5rem !important;
+}
+
+ul,
 li {
     margin: 0;
     padding: 0;
@@ -35,8 +39,8 @@ li {
 li {
     list-style: none;
     border-bottom: none;
-    /* text-decoration: underline;
-    border: 1px solid black; 
+    text-decoration: underline;
+    border: 1px solid black;
     padding: 10px;
 }
 
@@ -71,20 +75,31 @@ nav {
     li:hover {
         color: #404040;
     }
-} */
+}
 
-
-
-/* .square:before{
+.square:before {
     content: "";
     display: block;
-    padding-top: 100%;  /* initial ratio of 1:1
-} */
+    padding-top: 100%;
+    /* initial ratio of 1:1*/
+}
 
-/* .square {
+.square {
     height: 1000px;
-    width:  1000px;
-  } */
+    width: 1000px;
+}
+
+/* Table Scroll CSS */
+CSS
+
+.custom-scrollbar {
+position: relative;
+height: 200px;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
 
 #row-1 {
     min-height: 1024px;
@@ -93,6 +108,7 @@ nav {
     border-style: solid;
     border-width: 1 1 1 1;
 }
+
 #col-1A {
     min-height: 960px;
     width: 100%;
@@ -104,18 +120,29 @@ nav {
 
 #a {
     min-height: 565px;
+    min-width: 100px;
     background-color: white;
     border: silver;
     border-style: solid;
     border-width: 12px 12px 12px 12px;
+    height: 960px;
+    line-height: 960px;
+    text-align: center;
 }
+
+span {
+    display: inline-block;
+    vertical-align: center;
+    line-height: normal;
+}
+
 
 #col-1B {
     min-height: 600px;
     /* background-color: blue;*/
     border: grey;
     border-style: solid;
-    border-width:12px 12px 12px 12px;
+    border-width: 12px 12px 12px 12px;
 }
 
 #b {
@@ -149,18 +176,20 @@ nav {
     border-style: solid;
     border-width: 1 1 1 1;
 }
+
 /* Cholorpleth Map */
-#D-col-1{
+#D-col-1 {
     min-height: 100%;
-    min-width:600px;
+    min-width: 600px;
     background-color: white;
     border: white;
     border-style: solid;
     border-width: 0 0 0 0;
 }
+
 #D-row-1 {
     min-height: 100%;
-    min-width:600px;
+    min-width: 600px;
     background-color: white;
     border: silver;
     border-style: solid;
@@ -169,12 +198,13 @@ nav {
 
 #D-col-1a {
     min-height: 100%;
-    min-width:600px;
+    min-width: 600px;
     background-color: white;
     /* border: grey;
     border-style: solid;
     border-width: 12px 12px 12px 12px; */
 }
+
 /* Voters Chart and Pie Chart */
 #D-col-2 {
     min-height: 300px;
@@ -184,10 +214,12 @@ nav {
     border-style: solid;
     border-width: 12px 12px 12px 12px;
 }
-#D-row-2a{
-    min-height:25%;
+
+#D-row-2a {
+    min-height: 25%;
     min-width: 300px;
 }
+
 #D-col-2a {
     min-width: 300px;
     background-color: white;
@@ -195,10 +227,12 @@ nav {
     border-style: solid;
     border-width: 12px 12px 12px 12px; */
 }
+
 #votersTable {
-    min-height:25%;
+    min-height: 25%;
     width: auto;
-    }
+}
+
 /* Pie Chart Square */
 #D-row-2b {
     /* min-height:300px;
@@ -208,7 +242,8 @@ nav {
     border-style: solid;
     border-width: 12px 12px 12px 12px; */
 }
-#D-col-2b{
+
+#D-col-2b {
     /* min-height:300px; */
     background-color: white;
     /* border: yellow;

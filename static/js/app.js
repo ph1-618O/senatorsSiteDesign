@@ -4,8 +4,8 @@
 // });
 
 Promise.all([
-    d3.json("../static/data/Chair_Members.json"),
-    d3.json("../static/data/votersinfo.json"),]).then(function(files){
+    d3.json("../static/data/consolidated_Chairs.json"),
+    d3.json("../static/data/consolidated_Ranking.json"),]).then(function(files){
         //testing promise
         // console.log(files[0]);
         // console.log(files[1]);
@@ -15,25 +15,95 @@ Promise.all([
         // for (const [key, value] of Object.entries(files[0])){
         //     console.log(`${key}: ${value}`)
         // }
-
-        var chairNames = files[0].Chair_Names;
+        //Names, Last Name Chairs
+        data1 = files[0];
+        data2 = files[1];
+        console.log(files[0]);
+        console.log(files[1]);
+        var chairNames = files[0].Candidate;
         console.log("chairNames");
         console.log(chairNames);
-        var chairLastName = files[0].C_Last_Name;
+        var chairLastName = files[0].Last_Name;
         console.log("chairLastName");
         console.log(chairLastName);
+        var chairParty = files[0].Party;
+        console.log("Cparty");
+        console.log(chairParty);
 
-        //Getting data from votersinfo.json
-        var candidateVotes = files[1].candidatevotes;
-        console.log("candidateVotes");
-        console.log(candidateVotes);
-        var totalVotes = files[1].totalvotes;
-        console.log("totalVotes");
-        console.log(totalVotes);
-        var stateVotes = files[1].state;
-        console.log("stateVotes")
-        console.log(stateVotes);
-        let varList = [chairNames, chairLastName, candidateVotes, totalVotes, stateVotes];
+        //Getting Chairs Voting data
+        var chairVotes = files[0].Candidate_Votes;
+        console.log("ChairVotes");
+        console.log(chairVotes);
+        var totalChairVotes = files[0].Total_Votes;
+        console.log("totalChairVotes");
+        console.log(totalChairVotes);
+        var stateChairs = files[0].State;
+        console.log("stateChairs");
+        console.log(stateChairs);
+        var chairsCommittee = files[0].Committee;
+        console.log("chairsCommittee")
+        console.log(chairsCommittee);
+        var chairContributions = files[0].Contributions;
+        console.log("chair contributions")
+        console.log(chairContributions);
+        let chairArr = [chairNames, chairVotes, chairVotes, stateChairs, chairsCommittee];
+        const chair = {
+          chairNames,
+          chairLastName,
+          chairVotes,
+          totalChairVotes,
+          stateChairs,
+          chairsCommittee,
+          chairContributions
+        };
+        //Names, Last Name Ranking
+        var rankingNames = files[1].Candidate;
+        console.log("rankingNames");
+        console.log(rankingNames);
+        var rankingLastName = files[1].Last_Name;
+        console.log("rankingLastName");
+        console.log(rankingLastName);
+        var rankingParty = files[1].Party;
+        console.log("Rparty");
+        console.log(rankingParty);
+
+        //Getting Ranking Voting Data
+        var rankingVotes = files[1].Candidate_Votes;
+        console.log("rankingVotes");
+        console.log(rankingVotes);
+        var totalRankingVotes = files[1].Total_Votes;
+        console.log("totalRankingVotes");
+        console.log(totalRankingVotes);
+        var stateRanking = files[1].State;
+        console.log("stateRanking");
+        console.log(stateRanking);
+        var rankingCommittee = files[1].Committee;
+        console.log("rankingCommittee")
+        console.log(rankingCommittee);
+        var rankingContributions = files[1].Contributions;
+        console.log("ranking contributions")
+        console.log(rankingContributions);
+        let rankingArr = [rankingNames, rankingLastName, rankingVotes, totalRankingVotes, stateRanking, rankingCommittee, rankingContributions];
+
+        const ranking = {
+          rankingNames,
+          rankingLastName,
+          rankingVotes,
+          totalRankingVotes,
+          stateRanking,
+          rankingCommittee
+        };
+//Reformatting JSON from CSV to a complex object/dictionary
+        function objectDeepKeys(obj){
+          return Object.keys(obj).filter(key => obj[key] instanceof Object).map(key => objectDeepKeys(obj[key]).map(k => `${key}.${k}`)).reduce((x, y) => x.concat(y), Object.keys(obj))
+        }
+        console.log(objectDeepKeys(data1));
+        var keys = objectDeepKeys(data1).slice(0, 11);
+        console.log(keys);
+        
+
+
+
 //Bubble Chart
 
 var trace1 = {
@@ -70,8 +140,15 @@ var layout = {
 Plotly.newPlot('USA_Map', data, layout);
 
 
+// //Bar Graph Data
+//   var topRcontributions = rankingContributions.slice(0, 10).reverse()
+//   console.log(topRcontributions)
+// var dataParse = JSON.parse(data1)
+// console.log(dataParse)
+// var top10 = data1.sort(function(a, b){return a.Variable1 <b.Variable1 ? 1 : -1;}).slice(0, 10);
+// console.log(top10)
 
-        // //Bar Graph
+////Bar Graph
         var trace1 = {
             x:['Lindsay Graham(SC)', 'Chuck Grassley(IA)','Jim Inhofe(OK)', 'Richard Shelby(AL)'],
             y: [11873431,9883101,4646940, 4141799],
