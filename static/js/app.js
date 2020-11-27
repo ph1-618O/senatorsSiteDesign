@@ -34,7 +34,44 @@ Promise.all([
         console.log("stateVotes")
         console.log(stateVotes);
         let varList = [chairNames, chairLastName, candidateVotes, totalVotes, stateVotes];
-//Bar Graph
+//Bubble Chart
+
+var trace1 = {
+  x: ['Lindsay Graham', 'Chuck Grassley','Jim Inhofe', 'Richard Shelby'],
+  y: [1240075,1541036,820733,208744],
+  text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+    size: [6.72941,9.26007,5.88166,13.35104]
+  }
+};
+
+var trace2 = {
+  x: ['Patrick Leahy', 'Jack Reed', 'Ron Wyden','Dione Feinstein'],
+  y: [320467, 316898, 1952478, 11113364],
+  text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
+  mode: 'markers',
+  marker: {
+    color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
+    size: [1.92243,2.23675,11.05119,60.19422]
+  }
+};
+
+var data = [trace1, trace2];
+
+var layout = {
+  title: 'State total votes VS Candidate Vote',
+  showlegend: false,
+  height: 600,
+  width: 600
+};
+
+Plotly.newPlot('USA_Map', data, layout);
+
+
+
+        // //Bar Graph
         var trace1 = {
             x:['Lindsay Graham(SC)', 'Chuck Grassley(IA)','Jim Inhofe(OK)', 'Richard Shelby(AL)'],
             y: [11873431,9883101,4646940, 4141799],
@@ -95,40 +132,7 @@ Promise.all([
         Plotly.newPlot('HighestContributions', data);
 
     
-//Bubble Chart
 
-    var trace1 = {
-        x: ['Lindsay Graham', 'Chuck Grassley','Jim Inhofe', 'Richard Shelby'],
-        y: [1240075,1541036,820733,208744],
-        text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
-        mode: 'markers',
-        marker: {
-          color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
-          size: [6.72941,9.26007,5.88166,13.35104]
-        }
-      };
-
-      var trace2 = {
-        x: ['Patrick Leahy', 'Jack Reed', 'Ron Wyden','Dione Feinstein'],
-        y: [320467, 316898, 1952478, 11113364],
-        text: ['A<br>size: 40', 'B<br>size: 60', 'C<br>size: 80', 'D<br>size: 100'],
-        mode: 'markers',
-        marker: {
-          color: ['rgb(93, 164, 214)', 'rgb(255, 144, 14)',  'rgb(44, 160, 101)', 'rgb(255, 65, 54)'],
-          size: [1.92243,2.23675,11.05119,60.19422]
-        }
-      };
-      
-      var data = [trace1, trace2];
-      
-      var layout = {
-        title: 'State total votes VS Candidate Vote',
-        showlegend: false,
-        height: 600,
-        width: 600
-      };
-      
-      Plotly.newPlot('USA_Map', data, layout);
 
 //Pie Chart
 var data = [{

@@ -94,27 +94,28 @@ nav {
     border-width: 1 1 1 1;
 }
 #col-1A {
-    height: 100%;
+    min-height: 960px;
+    width: 100%;
     background-color: white;
-    border: white;
+    /* border: silver;
     border-style: solid;
-    border-width: 1 1 1 1;
+    border-width: 1 1 1 1; */
 }
 
 #a {
     min-height: 565px;
     background-color: white;
-    border: grey;
+    border: silver;
     border-style: solid;
     border-width: 12px 12px 12px 12px;
 }
 
 #col-1B {
     min-height: 600px;
-    /* background-color: blue;
+    /* background-color: blue;*/
     border: grey;
     border-style: solid;
-    border-width:12px 12px 12px 0;*/
+    border-width:12px 12px 12px 12px;
 }
 
 #b {
@@ -136,7 +137,7 @@ nav {
 #c {
     min-height: 30px;
     background-color: white;
-    border: grey;
+    border: silver;
     border-style: solid;
     border-width: 12px 12px 12px 12px;
 }
@@ -161,18 +162,18 @@ nav {
     min-height: 100%;
     min-width:600px;
     background-color: white;
-    border: white;
+    border: silver;
     border-style: solid;
-    border-width: 0 0 0 0;
+    border-width: 12px 12px 12px 12px;
 }
 
 #D-col-1a {
     min-height: 100%;
     min-width:600px;
     background-color: white;
-    border: grey;
+    /* border: grey;
     border-style: solid;
-    border-width: 12px 12px 12px 12px;
+    border-width: 12px 12px 12px 12px; */
 }
 /* Voters Chart and Pie Chart */
 #D-col-2 {
@@ -190,9 +191,9 @@ nav {
 #D-col-2a {
     min-width: 300px;
     background-color: white;
-    border: grey;
+    /* border: silver;
     border-style: solid;
-    border-width: 0 0 0 0;
+    border-width: 12px 12px 12px 12px; */
 }
 #votersTable {
     min-height:25%;
@@ -200,41 +201,41 @@ nav {
     }
 /* Pie Chart Square */
 #D-row-2b {
-    min-height:300px;
-    min-width:300px;
-    background-color: silver;
-    border: grey;
+    /* min-height:300px;
+    min-width:300px; */
+    background-color: white;
+    /* border:silver;
     border-style: solid;
-    border-width: 1 1 1 1;
+    border-width: 12px 12px 12px 12px; */
 }
 #D-col-2b{
-    min-height:300px;
+    /* min-height:300px; */
     background-color: white;
-    border: grey;
+    /* border: yellow;
     border-style: solid;
-    border-width: 0 0 0 0;
+    border-width: 12px 12px 12px 12px; */
 }
 
 #E-row {
-    /* min-height: 151.5px; */
-    /* background-color:#0058a4; */
+    /* min-height: 151.5px;
+    /* background-color:#0058a4;*/
     border: white;
     border-style: solid;
     border-width: 1, 1, 1, 1;
 }
 
 #E-col-1 {
-    /* min-height: 151.5px; */
-    background-color: silver;
-    border: grey;
+    /* min-height: 151.5px;
+    background-color: silver;*/
+    border: silver;
     border-style: solid;
     border-width: 9px 9px 9px 9px;
 }
 
 #E-col-2 {
-    /* min-height: 151.5px; */
-    background-color: silver;
-    border: grey;
+    /* min-height: 151.5px;
+    background-color: silver;*/
+    border: silver;
     border-style: solid;
     border-width: 9px 9px 9px 9px;
 }
