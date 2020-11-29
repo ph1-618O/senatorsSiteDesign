@@ -26,7 +26,15 @@ body {
     min-height:600px; */
 }
 
-#ml{
+.fit-image {
+    width: 100%;
+    object-fit: cover;
+    min-height: 900px;
+    /* only if you want fixed height */
+}
+
+
+#ml {
     margin-left: .5rem !important;
 }
 
@@ -90,15 +98,14 @@ nav {
 }
 
 /* Table Scroll CSS */
-CSS
-
-.custom-scrollbar {
-position: relative;
-height: 200px;
-overflow: auto;
+CSS .custom-scrollbar {
+    position: relative;
+    height: 200px;
+    overflow: auto;
 }
+
 .table-wrapper-scroll-y {
-display: block;
+    display: block;
 }
 
 #row-1 {
@@ -120,7 +127,7 @@ display: block;
 
 #a {
     min-height: 565px;
-    min-width: 100px;
+    min-width: 50pxpx;
     background-color: white;
     border: silver;
     border-style: solid;
@@ -262,14 +269,21 @@ span {
 #E-col-1 {
     /* min-height: 151.5px;
     background-color: silver;*/
+    min-width: 300px;
     border: silver;
     border-style: solid;
     border-width: 9px 9px 9px 9px;
 }
 
+.HighestContributions{
+    width: 100vw;
+    height: 100vh;
+}
+
 #E-col-2 {
     /* min-height: 151.5px;
     background-color: silver;*/
+    min-width:300px;
     border: silver;
     border-style: solid;
     border-width: 9px 9px 9px 9px;
