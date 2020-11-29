@@ -64,5 +64,16 @@ def contributions_2018():
     contributions_2018_dict=contributions_2018.to_dict(orient="records")
     return jsonify(contributions_2018_dict)
 
+@app.route("/consolidated_ranking")
+def consolidated_ranking():
+    consolidated_ranking=pd.read_sql("SELECT * FROM consolidated_ranking", con= connection)
+    consolidated_ranking_dict=consolidated_ranking.to_dict(orient="records")
+    return jsonify(consolidated_ranking_dict)
+@app.route("/consolidated_chairs")
+def consolidated_chairs():
+    consolidated_chairs=pd.read_sql("SELECT * FROM consolidated_chairs", con= connection)
+    consolidated_chairs_dict=consolidated_chairs.to_dict(orient="records")
+    return jsonify(consolidated_chairs_dict)
+
 if __name__ == "__main__":
     app.run(debug=True)
