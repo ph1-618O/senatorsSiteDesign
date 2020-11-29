@@ -45,39 +45,32 @@
                 <div id="col-1B" class="col-9">
                     <div id="1B-row" class="row">
                         <div id="b" class="col-12">
-
-
-                            <div id="C-row" class="row">
-                                <div id="c" class='col-12 d-flex'>
-                                    <nav class="navbar navbar-light bg-light justify-content-between">
-                                        <a class="navbar-brand">Senate Campaign Finance</a>
-                                        <!-- Small button groups (default and split)=-->
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-sm dropdown-toggle ml" type="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                About
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                ...
-                                            </div>
+                            <div id="C-row" class="row d-flex p-2">
+                                <!--<div id="c" class='col-12 d-flex'>-->
+                                <nav class="nav navbar-nav navbar-expand-lg navbar-light bg-light">
+                                    <a class="navbar-brand">Senate Campaign Finance</a>
+                                    <!-- Small button groups (default and split)=-->
+                                    <div class="btn-group justify-content-start">
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle ml" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            About
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            ...
                                         </div>
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Analysis
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                ...
-                                            </div>
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Analysis
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            ...
                                         </div>
-                                        <div class="btn-group">
-                                            <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
-                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                Team
-                                            </button>
-                                            <div class="dropdown-menu">
-                                                ...
-                                            </div>
+                                        <button class="btn btn-secondary btn-sm dropdown-toggle" type="button"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Team
+                                        </button>
+                                        <div class="dropdown-menu">
+                                            ...
                                         </div>
                                         <form class="form-inline">
                                             <input class="form-control mr-sm-2" type="search" placeholder="Search"
@@ -85,17 +78,40 @@
                                             <button class="btn btn-outline-success my-2 my-sm-0"
                                                 type="submit">Search</button>
                                         </form>
-                                    </nav>
-                                </div>
+                                    </div>
+                                </nav>
+                                <!--</div> closing 'c' div un-needed-->
                             </div>
                             <!--C-row end-->
                             <!---->
                             <div id="D-row" class="row">
                                 <div id="D-col-1" class="col-9">
                                     <div id="D-row-1" class="row">
-                                        <div id="D-col-1a" class="col-12 justify-content-center d-flex">
-                                            <p>Cholorpleth Map</p>
-                                            <div id="USA_Map"></div>
+                                        <div id="D-col-1a" class="col-12 justify-content-center my-auto d-flex">
+                                            <!-- Tableau Map #temidolan-->
+                                            <div class='tableauPlaceholder' id='viz1606673407099'
+                                                style='position: relative'><noscript><a href='#'><img alt=' '
+                                                            src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;SenatorsCampaignContrib&#47;Dashboard1&#47;1_rss.png'
+                                                            style='border: none' /></a></noscript><object
+                                                    class='tableauViz' style='display:none;'>
+                                                    <param name='host_url'
+                                                        value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                                    <param name='embed_code_version' value='3' />
+                                                    <param name='site_root' value='' />
+                                                    <param name='name' value='SenatorsCampaignContrib&#47;Dashboard1' />
+                                                    <param name='tabs' value='no' />
+                                                    <param name='toolbar' value='yes' />
+                                                    <param name='static_image'
+                                                        value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;SenatorsCampaignContrib&#47;Dashboard1&#47;1.png' />
+                                                    <param name='animate_transition' value='yes' />
+                                                    <param name='display_static_image' value='yes' />
+                                                    <param name='display_spinner' value='yes' />
+                                                    <param name='display_overlay' value='yes' />
+                                                    <param name='display_count' value='yes' />
+                                                    <param name='language' value='en' />
+                                                    <param name='filter' value='publish=yes' /></object></div>
+                                            <!-- End Tableau Map code #temidolan-->
+                                            <!--<div id="USA_Map"></div>-->
                                         </div>
                                     </div>
                                 </div>
@@ -214,5 +230,27 @@
 </script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 <script src="../static/js/app.js"></script>
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1606673407099');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.minWidth = '223px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '184px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth = '223px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '184px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '727px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src =
+        'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
 
 </html>
