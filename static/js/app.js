@@ -67,12 +67,13 @@ Promise.all([
 
   console.log(maxVoteNames);
 
-  // var maxVoteAll = [];
-  // for(var i=0; i < indexList.length; i++){
-  //   maxVoteAll.push(files[0][0][indexList[i]]);
-  // }
+  var maxVoteAll = [];
+  for(var i=0; i < indexList.length; i++){
+      var entry = Object.entries(files[0])[i]
+      maxVoteAll.push(entry);
+  }
 
-  // console.log(maxVoteAll);
+  console.log(maxVoteAll);
 
 
   console.log(chairVotes[11]);
