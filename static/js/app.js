@@ -61,7 +61,8 @@ Promise.all([
 console.log(chairs[0]);
 console.log(chairs[0].Candidate);
 
-
+//Propagating Table Row Data from chairs
+//next is drop down to switch to table row data from ranking
 var arrObj = [chairs];
 
   for (i = 0; i < arrObj.length; i++) {
@@ -75,79 +76,20 @@ var arrObj = [chairs];
       });
   }
 
-
-  // d3.select("tbody")
-  // .selectAll("tr")
-  // .data(austinWeather)
-  // .enter()
-  // .append("tr")
-  // .html(function(d) {
-  //   return `<td>${d.date}</td><td>${d.low}</td><td>${d.high}</td>`;
-  // });
-
   //Call Bar Graph
   //function (t1_xVals, t1_yVals, t2_xVals, t2_yVals, t1_Name, t2_Name, title, divID)
   createBar(CfullName, Ccontrib, 'Chair Members', RfullName, Rcontrib, 'R_Members', 'Contributions', 'contribBar');
   //Call Scatter Plot
   createScatter(Ccontrib, Cvotes, 'Chairs', Rcontrib, Rvotes, 'R_Members', 'contribCor');
 
-//Table Scroll Vertical
-  // $(document).ready(function () {
-  //   $('#dtDynamicVerticalScrollExample').DataTable({
-  //   "scrollY": "50vh",
-  //   "scrollCollapse": true,
-  //   });
-  //   $('.dataTables_length').addClass('bs-select');
-  //   });
 
-
-  //const arrMin = arr => Math.max(...arr);
-  //const arrMax = arr => Math.max(...arr);
-  // const arrSum = arr => arr.reduce((a,b) => a + b, 0)
-
-  //   var o = { a: 0 };
-
-  // Object.defineProperties(o, {
-  //     'b': { get: function() { return this.a + 1; } },
-  //     'c': { set: function(x) { this.a = x / 2; } }
-  // });
-  // var sumMinMax = {};
-  // sumMinMax.sum = function(arr){
-  //   return this
-  // }
-  // o.c = 10; // Runs the setter, which assigns 10 / 2 (5) to the 'a' property
-  // console.log(o.b); // Runs the getter, which yields a + 1 or 6
-  // console.log(o);
-
-  // const cVotesMin = Cvotes => Math.max(...Cvotes);
-  // console.log(cVotesMin);
-
-  // function sum(obj) {
-  //   return Object.keys(obj).reduce((sum, key) => sum + parseFloat(obj[key] || 0), 0);
-  // }
-
-  // console.log(`sum chair votes:${sum(cVotes)}`);
-
-
-  // const getSumMinMax = function(arr){
-  //   var arrStats = [];
-  //   const arrMin = arr => Math.max(...arr);
-  //   const arrMax = arr => Math.max(...arr);
-  //   const arrSum = arr => arr.reduce((a,b) => a + b, 0)
-  //   arrStats.push(arrMin, arrMax, arrSum);
-
-  //   return arrStats;
-  // }
-
-  // console.log(`Sum, Min, Max Chair Votes: ${getSumMinMax(Cvotes)}`)
-  // console.log((`Sum, Min, Max Chair Votes: ${getSumMinMax(Rvotes)}`))
-
-
-  //v1 committee - sumTotal
-  // createDonut(values, Ccommittee, '% Total Vote/Chair', 'Chairs', 'pieChairs');
-  // createDonut(values, Rcommittee, '% Total Vote/Chair', 'Ranking', 'pieRanking');
-
-
+console.log(Cvotes);
+var sum = 0;
+for (var i=1; i<Cvotes.length; i++){
+  sum += parseInt(Cvotes[i]);
+}
+var result = sum/Cvotes.length;
+console.log(result)
 
 
 
