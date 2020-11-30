@@ -5,11 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senate Campaign Finance</title>
-
+    <!-- Add favicon -->
+    <!-- <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16"> -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap4.min.css"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="../static/css/style.css" type="text/css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
+    <!-- For table-->
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 </head>
 
 <body>
@@ -118,11 +125,7 @@
                                 <div id="D-col-2" class="col-3">
                                     <div id="D-row-2a" class="row">
                                         <div id="D-col-2a" class="col-12">
-                                            <!---->
-                                            <!---->
-                                            <!---->
-                                            <p>Max Votes</p>
-                                            <!-- Adding in Table -->
+                                            <div style="height: 300px;overflow: scroll;">
                                             <div id="votersTable" class="table-wrapper-scroll-y custom-scrollbar">
                                                 <table id="TableScroll"
                                                     class="table table-hover table-bordered table-sm mb-0 "
@@ -130,37 +133,18 @@
                                                     <div id='insertData'>
                                                         <thead>
                                                             <tr>
-                                                                <th scope="col">#</th>
-                                                                <th scope="col">Votes</th>
-                                                                <th scope="col">First</th>
-                                                                <th scope="col">Last</th>
-                                                                <th scope="col">Committee</th>
-                                                                <th scope="col">Contributions</th>
-                                                                
+                                                                <th class='th-sm' scope="col">Candidate</th>
+                                                                <th class='th-sm' scope="col">State_Abbrv</th>
+                                                                <th class='th-sm' scope="col">Candidate_Votes</th>
+                                                                <th class='th-sm' scope="col">Committee</th>
+                                                                <th class='th-sm' scope="col">Contributions</th>
                                                             </tr>
                                                         </thead>
                                                         <tbody>
-                                                            <!--<tr>
-                                                                <th scope="row">1</th>
-                                                                <td>Diane</td>
-                                                                <td>Feinstein</td>
-                                                                <td>2M</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">2</th>
-                                                                <td>Chuck</td>
-                                                                <td>Grassley</td>
-                                                                <td>1.8M</td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th scope="row">3</th>
-                                                                <td>Senator</td>
-                                                                <td>LastName</td>
-                                                                <td>1.5M</td>
-                                                            </tr>-->
                                                         </tbody>
                                                     </div>
                                                 </table>
+                                            </div>
                                             </div>
                                             <p class='font-italic font-weight-light text-center text-muted text-small'>
                                                 some words about table<br>
@@ -170,7 +154,11 @@
                                     <!-- End Table -->
                                     <div id="D-row-2b" class="row">
                                         <div id="D-col-2b" class="col-12 justify-content-center d-flex">
-                                            <div id="PieChart">
+                                            <div id="pieChairs">
+                                                <p class="font-italic font-weight-light text-center text-muted">
+                                                    <br>PieChart</p>
+                                            </div>
+                                            <div id="pieRanking">
                                                 <p class="font-italic font-weight-light text-center text-muted">
                                                     <br>PieChart</p>
                                             </div>
