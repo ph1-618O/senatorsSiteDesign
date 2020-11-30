@@ -127,34 +127,39 @@
                                                 <table id="TableScroll"
                                                     class="table table-hover table-bordered table-sm mb-0 "
                                                     cellspacing="0" width="100%">
-                                                    <thead>
-                                                        <tr>
-                                                            <th scope="col">#</th>
-                                                            <th scope="col">First</th>
-                                                            <th scope="col">Last</th>
-                                                            <th scope="col">Votes</th>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                        <tr>
-                                                            <th scope="row">1</th>
-                                                            <td>Diane</td>
-                                                            <td>Feinstein</td>
-                                                            <td>2M</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">2</th>
-                                                            <td>Chuck</td>
-                                                            <td>Grassley</td>
-                                                            <td>1.8M</td>
-                                                        </tr>
-                                                        <tr>
-                                                            <th scope="row">3</th>
-                                                            <td>Senator</td>
-                                                            <td>LastName</td>
-                                                            <td>1.5M</td>
-                                                        </tr>
-                                                    </tbody>
+                                                    <div id='insertData'>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">#</th>
+                                                                <th scope="col">Votes</th>
+                                                                <th scope="col">First</th>
+                                                                <th scope="col">Last</th>
+                                                                <th scope="col">Committee</th>
+                                                                <th scope="col">Contributions</th>
+                                                                
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <!--<tr>
+                                                                <th scope="row">1</th>
+                                                                <td>Diane</td>
+                                                                <td>Feinstein</td>
+                                                                <td>2M</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">2</th>
+                                                                <td>Chuck</td>
+                                                                <td>Grassley</td>
+                                                                <td>1.8M</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">3</th>
+                                                                <td>Senator</td>
+                                                                <td>LastName</td>
+                                                                <td>1.5M</td>
+                                                            </tr>-->
+                                                        </tbody>
+                                                    </div>
                                                 </table>
                                             </div>
                                             <p class='font-italic font-weight-light text-center text-muted text-small'>
@@ -180,7 +185,7 @@
                                     <div class="row">
                                         <div class='col-12'>
                                             <p>Total Contributions Bar Graph</p>
-                                            <div id="TotalContributions">
+                                            <div id="contribBar">
                                                 <p></p>
                                             </div>
                                         </div>
@@ -190,7 +195,7 @@
                                     <div class='row'>
                                         <div class='col-12'>
                                             <p>Highest Contributions Table</p>
-                                            <div id="HighestContributions">
+                                            <div id="contribCor">
                                                 <p></p>
                                             </div>
                                         </div>
