@@ -114,39 +114,6 @@ nav {
     height: 1000px;
     width: 1000px;
 }
-/* Vertical Scroll */
-/* table.dataTable thead .sorting:after,
-table.dataTable thead .sorting:before,
-table.dataTable thead .sorting_asc:after,
-table.dataTable thead .sorting_asc:before,
-table.dataTable thead .sorting_asc_disabled:after,
-table.dataTable thead .sorting_asc_disabled:before,
-table.dataTable thead .sorting_desc:after,
-table.dataTable thead .sorting_desc:before,
-table.dataTable thead .sorting_desc_disabled:after,
-table.dataTable thead .sorting_desc_disabled:before {
-bottom: .5em;
-} */
-
-.dtHorizontalVerticalExampleWrapper {
-    max-width: 600px;
-    margin: 0 auto;
-    }
-    #dtHorizontalVerticalExample th, td {
-    white-space: nowrap;
-    }
-    table.dataTable thead .sorting:after,
-    table.dataTable thead .sorting:before,
-    table.dataTable thead .sorting_asc:after,
-    table.dataTable thead .sorting_asc:before,
-    table.dataTable thead .sorting_asc_disabled:after,
-    table.dataTable thead .sorting_asc_disabled:before,
-    table.dataTable thead .sorting_desc:after,
-    table.dataTable thead .sorting_desc:before,
-    table.dataTable thead .sorting_desc_disabled:after,
-    table.dataTable thead .sorting_desc_disabled:before {
-    bottom: .5em;
-    }
 
 
 /* Table Scroll CSS */
@@ -293,7 +260,7 @@ span {
 }
 
 /* Pie Chart Square */
-#D-row-2b {
+#D-row-2b, #D-row-2c {
     /* min-height:300px;
     min-width:300px; */
     background-color: white;
@@ -302,7 +269,7 @@ span {
     border-width: 12px 12px 12px 12px; */
 }
 
-#D-col-2b {
+#D-col-2b, #D-col-2c {
     /* min-height:300px; */
     background-color: white;
     /* border: yellow;

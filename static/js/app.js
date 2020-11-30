@@ -82,16 +82,58 @@ var arrObj = [chairs];
   //Call Scatter Plot
   createScatter(Ccontrib, Cvotes, 'Chairs', Rcontrib, Rvotes, 'R_Members', 'contribCor');
 
-
+//Getting Percentages for Donut Chairs
 console.log(Cvotes);
-var sum = 0;
-for (var i=1; i<Cvotes.length; i++){
-  sum += parseInt(Cvotes[i]);
+var sumC = 0;
+for (var i=0; i<Cvotes.length; i++){
+  sumC += parseInt(Cvotes[i]);
 }
-var result = sum/Cvotes.length;
-console.log(result)
+var Cavg = sumC/Cvotes.length;
+console.log(`Avg: ${Cavg}`);
+console.log(`Sum: ${sumC}`);
+
+var votePercentC = [];
+function roundUp(num, places) {
+  places = Math.pow(10, places)
+  return Math.ceil(num * places) / places
+}
+
+for (var i = 0; i<Cvotes.length; i++){
+  var holder = Cvotes[i]/sumC*100;
+  votePercentC.push(roundUp(holder, 0));
+};
+//Getting Percentages for Donut Ranking
+console.log(Rvotes);
+var sumR = 0;
+for (var i=0; i<Rvotes.length; i++){
+  sumR += parseInt(Rvotes[i]);
+}
+var Ravg = sumR/Rvotes.length;
+console.log(`Avg: ${Ravg}`);
+console.log(`Sum: ${sumR}`);
+
+var votePercentR = [];
+function roundUp(num, places) {
+  places = Math.pow(10, places)
+  return Math.ceil(num * places) / places
+}
+
+for (var i = 0; i<Rvotes.length; i++){
+  var holder = Rvotes[i]/sumR*100;
+  votePercentR.push(roundUp(holder, 0));
+};
+
+console.log(`Vote Percents: ${votePercentR}`);
+console.log(`Vote Percents: ${votePercentC}`);
+// console.log(roundUp(192.168, 0));
+
+createDonut(votePercentC, CfullName, 'Chair Vote %', 'Chairs', 'pieChairs');
+createDonut(votePercentR, RfullName, 'Ranking Member %', 'R_Members', 'pieRanking');
 
 
+
+//alert prints on screen
+//alert(roundNum(3.163303562250186, 2));
 
 }).catch(function (err) {
   //show error
@@ -224,45 +266,45 @@ const createDonut = function (values, labels, title, ctrTxt, divID) {
 
 
 //Pie Chart
-var data = [{
-  values: [16, 15, 12, 6, 5, 4, 42],
-  labels: ['US', 'China', 'European Union', 'Russian Federation', 'Brazil', 'India', 'Rest of World'],
-  domain: {
-    column: 0
-  },
-  name: 'GHG Emissions',
-  hoverinfo: 'label+percent+name',
-  hole: .4,
-  type: 'pie'
-}];
+// var data = [{
+//   values: [16, 15, 12, 6, 5, 4, 42],
+//   labels: ['US', 'China', 'European Union', 'Russian Federation', 'Brazil', 'India', 'Rest of World'],
+//   domain: {
+//     column: 0
+//   },
+//   name: 'GHG Emissions',
+//   hoverinfo: 'label+percent+name',
+//   hole: .4,
+//   type: 'pie'
+// }];
 
-var layout = {
-  title: 'Global Emissions 1990-2011',
-  annotations: [{
-    font: {
-      size: 20
-    },
-    showarrow: false,
-    text: 'CO2',
-    //loc of center text
-    x: .50,
-    y: .53
-  }],
-  height: 300,
-  width: 300,
-  margin: {
-    "t": 0,
-    "b": 0,
-    "l": 0,
-    "r": 0
-  },
-  showlegend: false,
-  legend: {"orientation": "h"},
-  grid: {
-    //makes the donut smaller
-    rows: 0,
-    columns: 0
-  },
-};
-// Calling pie chart
-Plotly.newPlot('pieChairs', data, layout);
+// var layout = {
+//   title: 'Global Emissions 1990-2011',
+//   annotations: [{
+//     font: {
+//       size: 20
+//     },
+//     showarrow: false,
+//     text: 'CO2',
+//     //loc of center text
+//     x: .50,
+//     y: .53
+//   }],
+//   height: 300,
+//   width: 300,
+//   margin: {
+//     "t": 0,
+//     "b": 0,
+//     "l": 0,
+//     "r": 0
+//   },
+//   showlegend: false,
+//   legend: {"orientation": "h"},
+//   grid: {
+//     //makes the donut smaller
+//     rows: 0,
+//     columns: 0
+//   },
+// };
+// // Calling pie chart
+// Plotly.newPlot('pieChairs', data, layout);
