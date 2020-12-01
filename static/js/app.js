@@ -240,6 +240,7 @@ const createDonut = function (values, labels, title, ctrTxt, divID) {
       },
       showarrow: false,
       text: ctrTxt,
+      textposition: 'inside',
       x: .50,
       y: .53
     }],

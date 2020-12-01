@@ -1,3 +1,4 @@
+#!/usr/bin/env/ python
 # 1. import Flask
 from models import create_classes
 import os
