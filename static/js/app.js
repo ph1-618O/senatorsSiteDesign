@@ -158,14 +158,20 @@ const createBar = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals, t2_
     x: t1_xVals,
     y: t1_yVals,
     type: 'bar',
-    name: t1_Name
+    name: t1_Name,
+    marker: {
+      color: 'rgb(233, 29, 14)' //chairs
+    }
   };
 
   var trace2 = {
     x: t2_xVals,
     y: t2_yVals,
     type: 'bar',
-    name: t2_Name
+    name: t2_Name,
+    marker: {
+      color: 'rgb(35, 32, 102)'
+    }
   };
 
   var data = [trace1, trace2];
@@ -223,6 +229,9 @@ const createScatter = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals,
     // mode: 'lines+markers',
     mode: 'markers',
     type: 'scatter',
+    marker: {
+      color: 'rgb(233, 29, 14)', //color hex republican red
+      size: 8},
     name: t1_Name
   };
 
@@ -240,6 +249,9 @@ const createScatter = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals,
     // mode: 'lines+markers',
     mode: 'markers',
     type: 'scatter',
+    marker: {
+      color: 'rgb(35, 32, 102)', //democrat blue
+      size: 8},
     name: t2_Name
   };
 
@@ -305,7 +317,26 @@ const createDonut = function (values, labels, title, ctrTxt, divID) {
     // name: tipName,
     hoverinfo: 'label+percent+name',
     hole: .4,
-    type: 'pie'
+    type: 'pie',
+    marker: {
+      colors: [
+        'rgb(233, 29, 14)',
+        'rgb(227, 0, 42)',
+        'rgb(224, 0, 47)',
+        'rgb(213, 0, 65)',
+        'rgb(209, 0, 69)',
+        'rgb(193, 0, 84)',
+        'rgb(188, 0, 87)',
+        'rgb(168, 0, 98)',
+        'rgb(162, 0, 100)',
+        'rgb(139, 0, 107)',
+        'rgb(107, 15, 111)',
+        'rgb(100, 19, 111)',
+        'rgb(73, 28, 109)',
+        'rgb(66, 29, 108)',
+        'rgb(35, 32, 102)',
+      ]
+    },
   }];
 
   var layout = {

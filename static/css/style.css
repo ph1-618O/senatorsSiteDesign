@@ -1,9 +1,9 @@
 html,
 body {
-    margin-top:0px;
-    margin-bottom:0px;
-    margin-left:0px;
-    margin-right:0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     height: 100%;
     width: 100%;
     padding: 0;
@@ -25,11 +25,11 @@ body {
     left: 0;
 }
 
-.jumbotron{
-    margin-top:0px;
-    margin-bottom:0px;
-    margin-left:0px;
-    margin-right:0px;
+.jumbotron {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     padding: 0;
 }
 
@@ -93,6 +93,14 @@ nav {
     float: left;
     display: table-cell;
     text-align: left;
+}
+.btn.btn-secondary:hover,
+.btn.btn-secondary:focus,
+.btn.btn-secondary:active,
+.btn.btn-secondary.active {
+    color: #ffffff;
+    background-color: red;
+    border-color: red;
 }
 
 
@@ -177,6 +185,7 @@ CSS .custom-scrollbar {
     border-style: solid;
     border-width: 1 1 1 1; */
 }
+
 /*left column use if needed
 /* #a {
     height: 100%;
@@ -202,7 +211,7 @@ CSS .custom-scrollbar {
     /* min-height: 600px; */
     /* background-color: blue;*/
     height: 100%;
-    background-color:#e9ecef;
+    background-color: #e9ecef;
     /* border: grey;
     border-style: solid;
     border-width: 12px 12px 12px 12px; */
@@ -214,7 +223,7 @@ CSS .custom-scrollbar {
     border: white;
     border-style: solid;
     border-width: 0 0 0 0;
-    background-color:white;
+    background-color: white;
 }
 
 #C-row {
@@ -319,7 +328,8 @@ CSS .custom-scrollbar {
     border-width: 12px 12px 12px 12px; */
 }
 
-#E-row, .col-12 {
+#E-row,
+.col-12 {
     /* min-height: 151.5px;
     /* background-color:#0058a4;*/
     width: 100%;
@@ -328,7 +338,8 @@ CSS .custom-scrollbar {
     border-width: 1, 1, 1, 1;
 }
 
-#E-col-1, #E-col-2 {
+#E-col-1,
+#E-col-2 {
     /* min-height: 151.5px;*/
     background-color: white;
     min-width: 300px;
@@ -341,12 +352,15 @@ CSS .custom-scrollbar {
     width: 100vw;
     height: 100vh;
 }
+
 /* 
 #E-col-2 {
     /* min-height: 151.5px;
     background-color: silver;*/
-    min-width: 300px;
-    border: white;
-    border-style: solid;
-    border-width: 9px 9px 9px 9px;
-} */
+min-width: 300px;
+border: white;
+border-style: solid;
+border-width: 9px 9px 9px 9px;
+}
+
+*/
