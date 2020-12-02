@@ -5,4 +5,4 @@ Using Adobe Indesign, HTML/CSS and JavaScript to layout a data dashboard website
 *click link above for preview*
 
 
-![Layout](Layout_11-30_13.46.27PM.png)
+![Layout](layout/layout_iterations/layout_12-02_ 1227.png)
