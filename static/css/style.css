@@ -7,6 +7,7 @@ body {
     height: 100%;
     width: 100%;
     padding: 0;
+    font: normal 10px, Verdana, Arial, sans-serif;
 
 }
 
@@ -85,6 +86,7 @@ nav {
     margin: 0;
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 15px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -101,7 +103,7 @@ nav {
 @media screen and (min-width:700px) {
     nav {
         width: 100%;
-        text-align: center;
+        text-align: left;
     }
 
     nav,
@@ -143,7 +145,7 @@ CSS .custom-scrollbar {
     display: block;
 }
 
-#votersTable {
+#votersTable, #pieText, #tableText {
     font-size: 10px;
 }
 
@@ -169,15 +171,15 @@ CSS .custom-scrollbar {
     border-width: 1 1 1 1;
 }
 
-#col-1A {
+/* #col-1A { */
     /* min-height: 568px; */
-    height: 100%;
+    /* height: 100%;
     width: 100%;
-    background-color: white;
+    background-color: white; */
     /* border: silver;
     border-style: solid;
     border-width: 1 1 1 1; */
-}
+/* } */
 
 /*left column use if needed
 /* #a {
@@ -204,10 +206,10 @@ CSS .custom-scrollbar {
     /* min-height: 600px; */
     /* background-color: blue;*/
     height: 100%;
-    background-color: #e9ecef;
-    /* border: grey;
+    background-color: white;
+    border: white;
     border-style: solid;
-    border-width: 12px 12px 12px 12px; */
+    border-width: 12px 12px 12px 12px;
 }
 
 #b {
@@ -238,7 +240,7 @@ CSS .custom-scrollbar {
 #D-row {
     /* min-height: 600px;
     min-width: 600px; */
-    border: white;
+    border: #e9ecef;
     border-style: solid;
     border-width: 1 1 1 1;
 }
@@ -321,8 +323,7 @@ CSS .custom-scrollbar {
     border-width: 12px 12px 12px 12px; */
 }
 
-#E-row,
-.col-12 {
+#E-row-a {
     /* min-height: 151.5px;
     /* background-color:#0058a4;*/
     width: 100%;
@@ -335,21 +336,22 @@ CSS .custom-scrollbar {
 #E-col-2 {
     /* min-height: 151.5px;*/
     background-color: white;
-    min-width: 300px;
+    width:100%;
+    /* min-width: 300px; */
     border: white;
     border-style: solid;
-    border-width: 9px 9px 9px 9px;
+    border-width: 1 1 1 1;
 }
 
-.HighestContributions {
+/* .HighestContributions {
     width: 100vw;
     height: 100vh;
-}
+} */
 
 /* 
 #E-col-2 {
     /* min-height: 151.5px;
-    background-color: silver;*/
+    background-color: silver;
 min-width: 300px;
 border: white;
 border-style: solid;

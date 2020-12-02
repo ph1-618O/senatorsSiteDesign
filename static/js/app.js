@@ -62,22 +62,6 @@ Promise.all([
   console.log(chairs[0]);
   console.log(chairs[0].Candidate);
 
-  //Propagating Table Row Data from chairs
-  //next is drop down to switch to table row data from ranking
-  const makeTable = function (data) {
-    var arrObj = [data];
-    for (i = 0; i < arrObj.length; i++) {
-      d3.select('tbody')
-        .selectAll('tr')
-        .data(arrObj[i])
-        .enter()
-        .append('tr')
-        .html(function (d) {
-          return `<td>${d.Candidate}</td><td>${d.State_Abbrv}</td><td>${d.Candidate_Votes}</td><td>${d.Committee}</td><td>${d.Contributions}</td>`;
-        });
-    }
-  }
-
   //Making Charts
   makeTable(chairs);
   //Call Bar Graph
@@ -151,6 +135,24 @@ Promise.all([
 //end main function
 
 
+//Propagating Table Row Data from chairs
+//next is drop down to switch to table row data from ranking
+const makeTable = function (data) {
+  var arrObj = [data];
+  for (i = 0; i < arrObj.length; i++) {
+    d3.select('tbody')
+      .selectAll('tr')
+      .data(arrObj[i])
+      .enter()
+      .append('tr')
+      .html(function (d) {
+        return `<td>${d.Candidate}</td><td>${d.State_Abbrv}</td><td>${d.Candidate_Votes}</td><td>${d.Committee}</td><td>${d.Contributions}</td>`;
+      });
+  }
+}
+
+
+
 
 //Bar Graph Func
 const createBar = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals, t2_Name, title, divID) {
@@ -160,7 +162,7 @@ const createBar = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals, t2_
     type: 'bar',
     name: t1_Name,
     marker: {
-      color: 'rgb(233, 29, 14)' //chairs
+      color: 'rgb(174 18 58)' //'rgb(233, 29, 14)' //chairs
     }
   };
 
@@ -170,7 +172,7 @@ const createBar = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals, t2_
     type: 'bar',
     name: t2_Name,
     marker: {
-      color: 'rgb(35, 32, 102)'
+      color: 'rgb(72, 120, 166)', //'rgb(35, 32, 102)'
     }
   };
 
@@ -180,7 +182,7 @@ const createBar = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals, t2_
     title: title,
     showlegend: true,
     width: 700,
-    height: 450,
+    height: 550,
     yaxis: {
       title: {
         text: 'Dollars',
@@ -230,8 +232,9 @@ const createScatter = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals,
     mode: 'markers',
     type: 'scatter',
     marker: {
-      color: 'rgb(233, 29, 14)', //color hex republican red
-      size: 8},
+      color: 'rgb(174 18 58)', //'rgb(233, 29, 14)', //color hex republican red
+      size: 8
+    },
     name: t1_Name
   };
 
@@ -250,8 +253,9 @@ const createScatter = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals,
     mode: 'markers',
     type: 'scatter',
     marker: {
-      color: 'rgb(35, 32, 102)', //democrat blue
-      size: 8},
+      color: 'rgb(72, 120, 166)', //'rgb(35, 32, 102)', //democrat blue
+      size: 8
+    },
     name: t2_Name
   };
 
@@ -267,14 +271,14 @@ const createScatter = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals,
   var layout = {
     title: 'Contributions($$) to Votes',
     width: 700,
-    height: 450,
-    margin: {
-      l: 50,
-      r: 50,
-      b: 100,
-      t: 100,
-      pad: 4
-    },
+    height: 500,
+    // margin: {
+    //   l: 50,
+    //   r: 50,
+    //   b: 100,
+    //   t: 100,
+    //   pad: 4
+    // },
     yaxis: {
       title: {
         text: 'Votes',
@@ -375,8 +379,14 @@ const createDonut = function (values, labels, title, ctrTxt, divID) {
 
 ////update on click
 
+var select = d3.select('.pieButton');
+
+select.on('click', function(){
+  var choice = "";
+})
+
 function defaultFunction() {
-  d3.json("data1.json", function (error, newdata) {
+  d3.json("Senators", function (error, newdata) {
     if (error) throw error;
     data = newdata;
     data.forEach(function (d) {
@@ -388,7 +398,7 @@ function defaultFunction() {
 
 
 function updateFunction() {
-  d3.json("data2.json", function (error, newdata) {
+  d3.json("Ranking Members", function (error, newdata) {
     if (error) throw error;
     data = newdata;
     update();
