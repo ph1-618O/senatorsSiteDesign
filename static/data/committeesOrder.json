@@ -1,0 +1,121 @@
+var superA = [{
+    - Appropriations: Appropriations,
+    - Armed_Services, 
+    - Finance:
+    - Foreign_Relations:
+}]
+
+var aCommittees = [{
+    - Agriculture_Nutrition_and_Forestry
+    - Banking_Housing_and_Urban_Affairs
+    - Commerce_Science_and_Transportation
+    - Energy_and_Natural_Resources
+    - Environment_and_Public_Works
+    Foreign_Relations
+    - Health_Education_Labor_and_Pensions
+    - Homeland_Security_and_Governmental Affairs
+    - Judiciary
+    Select_Intelligence 10R, 8D, 1I
+}]
+
+var bCommittees = [{
+    - Budget
+    - Rules and Administration
+    - Small Business and Entrepreneurship
+    - Veterans’ Affairs
+    Special Aging 8R, 7D
+    ?Joint Economic Committee
+}]
+
+var cCommittees = [{
+    Select Ethics 3R, 3D
+    Indian Affairs 7R, 6D
+    ?Joint Taxation
+}]
+
+//Joint Library and Joint Printing are not listed but are treated as C Committees
+
+//Rules reference
+//https://www.senate.gov/CRSpubs/3f85020c-5fe6-40d7-955d-dfec9defb72a.pdf
+
+//Rules
+// Each Senator shall serve on two committees, and no more than two, in Class A.
+// Each Senator may serve on one committee, but no more than one, in Class B.
+// Each Senator may serve on one or more committees in Class C
+
+// Super“ A” or“ Big Four” Committees:
+//     Democratic Members are prohibited from serving on more than one among
+// the Committees on Appropriations, Armed Services, and Finance pursuant
+// to party rules.
+
+// Republican Members are prohibited from serving on more than one among
+// the Committees on Appropriations, Armed Services, Finance, and Foreign Relations
+// pursuant to party rules.
+
+// Republican Members from the same state are prohibited from serving on the same
+// committee by Republican Conference rule.
+
+// Democrats adhere to the same prohibition, but by tradition.
+
+// Intelligence Committee membership should include two Members each from the Committees
+// Appropriations, Armed Services, Judiciary, and Foreign Relations.
+
+// Chair and ranking Member of the Armed Services Committee shall serve
+// as ex - officio non - voting members of the Intelligence Committee.
+
+// //Chairmanship Limitations/Rules
+
+// Limitations on Chairmanships:
+
+// Republican Conference rules address limitations on committee leadership positions 
+// for Republicans whether or not they are in the majority. 
+
+// Democratic Conference rules may also address these limitations; 
+// ----however, their rules are not publicly available.
+
+// A chair/ranking Member of an “A” committee may not serve as chair or ranking Member
+// of any other committee, 
+// ----except the chair/ranking Member of the Finance Committee may chair the 
+// Joint Committee on Taxation.
+
+// A chair/ranking Member of an “A” committee may not serve as chair/ranking Member
+// of any subcommittees. 
+// ----Appropriations subcommittee chairmanships are exempt.
+
+// A chair/ranking Member of a “non-A” committee may not serve as chair/ranking Member
+// of any other committee, 
+// ----except the chair/ranking Member of the Rules and Administration Committee 
+// may chair the Joint Printing or Joint Library Committee.
+
+// A chair/ranking Member of a “non-A” committee
+// may not serve as chair/ranking Member of more than one subcommittee. 
+// Appropriations subcommittee chairmanships are not exempt.
+// ---excluding the Ethics Committee
+
+
+
+// The chair/vice chair of the Ethics Committee may serve on no more than two standing
+// subcommittees.
+
+// A Senator may not serve as chair/ranking Member of more than two subcommittees.
+// Democrats interpret this as a “two gavel rule,” one full committee chair/ranking
+// Member and one subcommittee, or two subcommittees.
+
+// A Senator shall not serve more than six years as chair of any standing committee, 
+// effective January 1997, plus six years as ranking Member of a committee. 
+// Once a Senator served six years chairing a committee, the term would be over. 
+// However, if a Senator served six years as a ranking minority Member, 
+// the Senator could serve as chair if the party controls the chamber.
+
+// Limitations on Chair and Party Leader 
+// A chair or party leader may not select an “A” committee on their third round committee selection.
+
+//Other Reference
+
+//https://www.govtrack.us/congress/committees/
+
+//Senority
+//https://www.senate.gov/reference/glossary_term/seniority.htm
+//seniority - The status given senators according to their length of service, 
+//which entitles a senator with greater seniority to preferential treatment in 
+//matters such as committee assignments.
