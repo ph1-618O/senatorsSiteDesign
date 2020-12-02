@@ -1,19 +1,13 @@
 html,
 body {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-
+    height: 100%
 }
 
 
 .vertical-center {
     min-height: 100%;
     min-height: 100vh;
+
     text-align: center;
     font: 0/0 a;
 }
@@ -23,14 +17,6 @@ body {
     width: 100%;
     height: 100%;
     left: 0;
-}
-
-.jumbotron {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding: 0;
 }
 
 .container-fluid {
@@ -43,7 +29,7 @@ body {
 .fit-image {
     width: 100%;
     object-fit: cover;
-    /* min-height: 900px; */
+    min-height: 900px;
     /* only if you want fixed height */
 }
 
@@ -75,8 +61,7 @@ nav {
     display: block;
     color: white;
     background: grey;
-    width: 100%;
-    /* width: 700px; */
+    width: 700px;
 }
 
 .navbar-nav {
@@ -94,7 +79,6 @@ nav {
     display: table-cell;
     text-align: left;
 }
-
 
 
 
@@ -119,17 +103,17 @@ nav {
     }
 }
 
-/* .square:before {
+.square:before {
     content: "";
     display: block;
     padding-top: 100%;
-    /* initial ratio of 1:1
-} */
+    /* initial ratio of 1:1*/
+}
 
-/* .square {
+.square {
     height: 1000px;
     width: 1000px;
-} */
+}
 
 
 /* Table Scroll CSS */
@@ -143,26 +127,8 @@ CSS .custom-scrollbar {
     display: block;
 }
 
-#votersTable {
-    font-size: 10px;
-}
-
-/* .thead tr td:nth-child(even) {
-    background: #F5F5F5;
-
-}
-
-.thead tr td:nth-child(odd) {
-    background: white;
-} */
-
-.table-hover tbody tr:hover td,
-.table-hover tbody tr:hover th {
-    background-color: #F0F8FF;
-}
-
 #row-1 {
-    /* min-height: 1024px; */
+    min-height: 1024px;
     background-color: white;
     border: white;
     border-style: solid;
@@ -170,8 +136,7 @@ CSS .custom-scrollbar {
 }
 
 #col-1A {
-    /* min-height: 568px; */
-    height: 100%;
+    min-height: 960px;
     width: 100%;
     background-color: white;
     /* border: silver;
@@ -179,48 +144,43 @@ CSS .custom-scrollbar {
     border-width: 1 1 1 1; */
 }
 
-/*left column use if needed
-/* #a {
-    height: 100%;
-    min-width: 320px;
+#a {
+    min-height: 565px;
+    min-width: 50pxpx;
     background-color: white;
     border: silver;
     border-style: solid;
     border-width: 12px 12px 12px 12px;
-    /* height: 960px;
+    height: 960px;
     line-height: 960px;
     text-align: center;
-} */
+}
 
-/* span {
+span {
     display: inline-block;
     vertical-align: center;
     line-height: normal;
-} */
+}
 
 
-#col-1B,
-#col-1A {
-    /* min-height: 600px; */
+#col-1B {
+    min-height: 600px;
     /* background-color: blue;*/
-    height: 100%;
-    background-color: #e9ecef;
-    /* border: grey;
+    border: grey;
     border-style: solid;
-    border-width: 12px 12px 12px 12px; */
+    border-width: 12px 12px 12px 12px;
 }
 
 #b {
-    /* min-height: 600px;
-    min-width: 600px; */
+    min-height: 600px;
+    min-width: 600px;
     border: white;
     border-style: solid;
     border-width: 0 0 0 0;
-    background-color: white;
 }
 
 #C-row {
-    /* min-height: 100px; */
+    min-height: 100px;
     background-color: white;
     border: white;
     border-style: solid;
@@ -230,14 +190,14 @@ CSS .custom-scrollbar {
 #c {
     min-height: 30px;
     background-color: white;
-    border: white;
+    border: silver;
     border-style: solid;
     border-width: 12px 12px 12px 12px;
 }
 
 #D-row {
-    /* min-height: 600px;
-    min-width: 600px; */
+    min-height: 600px;
+    min-width: 600px;
     border: white;
     border-style: solid;
     border-width: 1 1 1 1;
@@ -246,7 +206,7 @@ CSS .custom-scrollbar {
 /* Cholorpleth Map */
 #D-col-1 {
     min-height: 100%;
-    /* min-width: 600px; */
+    min-width: 600px;
     background-color: white;
     border: white;
     border-style: solid;
@@ -255,16 +215,16 @@ CSS .custom-scrollbar {
 
 #D-row-1 {
     min-height: 100%;
-    /* min-width: 600px; */
+    min-width: 600px;
     background-color: white;
-    border: white;
+    border: silver;
     border-style: solid;
     border-width: 12px 12px 12px 12px;
 }
 
 #D-col-1a {
     min-height: 100%;
-    /* min-width: 600px; */
+    min-width: 600px;
     background-color: white;
     /* border: grey;
     border-style: solid;
@@ -276,7 +236,7 @@ CSS .custom-scrollbar {
     min-height: 300px;
     min-width: 300px;
     background-color: white;
-    border: white;
+    border: silver;
     border-style: solid;
     border-width: 12px 12px 12px 12px;
 }
@@ -300,43 +260,36 @@ CSS .custom-scrollbar {
 }
 
 /* Pie Chart Square */
-#D-row-2b,
-#D-row-2c {
+#D-row-2b, #D-row-2c {
     /* min-height:300px;
     min-width:300px; */
     background-color: white;
-    min-width: 300px;
     /* border:silver;
     border-style: solid;
     border-width: 12px 12px 12px 12px; */
 }
 
-#D-col-2b,
-#D-col-2c {
+#D-col-2b, #D-col-2c {
     /* min-height:300px; */
     background-color: white;
-    min-width: 300px;
     /* border: yellow;
     border-style: solid;
     border-width: 12px 12px 12px 12px; */
 }
 
-#E-row,
-.col-12 {
+#E-row {
     /* min-height: 151.5px;
     /* background-color:#0058a4;*/
-    width: 100%;
     border: white;
     border-style: solid;
     border-width: 1, 1, 1, 1;
 }
 
-#E-col-1,
-#E-col-2 {
-    /* min-height: 151.5px;*/
-    background-color: white;
+#E-col-1 {
+    /* min-height: 151.5px;
+    background-color: silver;*/
     min-width: 300px;
-    border: white;
+    border: silver;
     border-style: solid;
     border-width: 9px 9px 9px 9px;
 }
@@ -346,14 +299,11 @@ CSS .custom-scrollbar {
     height: 100vh;
 }
 
-/* 
 #E-col-2 {
     /* min-height: 151.5px;
     background-color: silver;*/
-min-width: 300px;
-border: white;
-border-style: solid;
-border-width: 9px 9px 9px 9px;
+    min-width: 300px;
+    border: silver;
+    border-style: solid;
+    border-width: 9px 9px 9px 9px;
 }
-
-*/
