@@ -182,7 +182,7 @@ const createBar = function (t1_xVals, t1_yVals, t1_Name, t2_xVals, t2_yVals, t2_
     title: title,
     showlegend: true,
     width: 700,
-    height: 550,
+    height: 500,
     yaxis: {
       title: {
         text: 'Dollars',
@@ -379,44 +379,46 @@ const createDonut = function (values, labels, title, ctrTxt, divID) {
 
 ////update on click
 
-var select = d3.select('.pieButton');
+// var select = d3.select('.pieButton');
 
-select.on('click', function(){
-  var choice = "";
-})
+// select.on('click', function(){
+//   selectedVal= select.property("value")
+//   data=data.filter()
+//   createDonut(data)
+// })
 
-function defaultFunction() {
-  d3.json("Senators", function (error, newdata) {
-    if (error) throw error;
-    data = newdata;
-    data.forEach(function (d) {
-      d.value = +d.value;
-    })
-    update();
-  });
-}
-
-
-function updateFunction() {
-  d3.json("Ranking Members", function (error, newdata) {
-    if (error) throw error;
-    data = newdata;
-    update();
-  });
-}
+// function defaultFunction() {
+//   d3.json("Senators", function (error, newdata) {
+//     if (error) throw error;
+//     data = newdata;
+//     data.forEach(function (d) {
+//       d.value = +d.value;
+//     })
+//     update();
+//   });
+// }
 
 
+// function updateFunction() {
+//   d3.json("Ranking Members", function (error, newdata) {
+//     if (error) throw error;
+//     data = newdata;
+//     update();
+//   });
+// }
 
-function update(err, newdata) {
-  y.domain([0, d3.max(data, function (d) {
-    return d.value;
-  })]);
 
-  x.domain(data.map(function (d) {
-      return d.name
-    }))
-    .padding([0.5]);
-}
+
+// function update(err, newdata) {
+//   y.domain([0, d3.max(data, function (d) {
+//     return d.value;
+//   })]);
+
+//   x.domain(data.map(function (d) {
+//       return d.name
+//     }))
+//     .padding([0.5]);
+// }
 
 //////
 
@@ -495,3 +497,12 @@ console.log(lr);
 
 
 // for (var i = 0; i < y.length; i++) {
+
+  $(window).bind('resize', function(e)
+  {
+    if (window.RT) clearTimeout(window.RT);
+    window.RT = setTimeout(function()
+    {
+      this.location.reload(false); /* false to get page from cache */
+    }, 100);
+  });
