@@ -9,6 +9,7 @@
     <!-- <link rel="icon" href="img/favicon.ico" type="image/gif" sizes="16x16"> -->
     <!-- Font Awesome -->
     <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
@@ -20,6 +21,7 @@
     <link rel="stylesheet" href="../static/css/style.css" type="text/css">
     <script src="https://d3js.org/d3.v6.min.js"></script>
     <!-- For table-->
+    
     <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
     <script src="https://cdn.datatables.net/1.10.16/js/dataTables.bootstrap4.min.js"></script>
 </head>
@@ -30,7 +32,8 @@
         <div id='very-specific-design' class="container-fluid full-width div">
             <!-- <div class="container full-width div"> -->
             <div class="jumbotron">
-                <!--<div class="container full-width div"><!--</div>fluid d-flex h100 flex-column">-->
+                <!--<div class="container full-width div">
+                    </div>fluid d-flex h100 flex-column">-->
                 <div id="row-1" class="row">
 
 
@@ -50,129 +53,177 @@
                             </div>
                         </div>
                     </div>
-                    <!-- col-1A end
-                    <!-- left side end-->
+                    <!col-1A end
+                    < left side end-->
 
 
 
                     <!--right side begin-->
                     <div id="col-1B" class="col-12 rounded">
-                            <div id="1B-row" class="row">
-                                <div id="b" class="col-12">
-                                    <div id="C-row" class="row d-flex p-2">
-                                        <!--<div id="c" class='col-12 d-flex'>-->
-                                        <nav class="nav navbar-nav navbar-expand-lg navbar-light bg-light">
-                                            <a class="navbar-brand">Senate Campaign Finance</a>
-                                            <div class="btn-group justify-content-left">
-                                                <button class="btn btn-secondary btn-sm dropdown-toggle ml"
-                                                    type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    About
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    ...
-                                                </div>
-                                                <button class="btn btn-secondary btn-sm dropdown-toggle ml"
-                                                    type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Analysis
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    ...
-                                                </div>
-                                                <button class="btn btn-secondary btn-sm dropdown-toggle ml"
-                                                    type="button" data-toggle="dropdown" aria-haspopup="true"
-                                                    aria-expanded="false">
-                                                    Team
-                                                </button>
-                                                <div class="dropdown-menu">
-                                                    ...
-                                                </div>
-                                                <form class="form-inline">
-                                                    <input class="form-control mr-sm-2" type="search"
-                                                        placeholder="Search" aria-label="Search">
-                                                    <button class="btn btn-outline-secondary my-2 my-sm-0"
-                                                        type="submit">Search</button>
-                                                </form>
+                        <div id="1B-row" class="row">
+                            <div id="b" class="col-12">
+                                <div id="C-row" class="row d-flex p-2">
+                                    <!--<div id="c" class='col-12 d-flex'>-->
+                                    <nav class="nav navbar-nav navbar-expand-lg navbar-light bg-light">
+                                        <a class="navbar-brand">Senate Campaign Finance</a>
+                                        <div class="btn-group justify-content-left">
+                                            <button class="btn btn-secondary btn-sm dropdown-toggle ml" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                About
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                ...
                                             </div>
-                                        </nav>
-                                        <!--</div> closing 'c' div un-needed-->
-                                    </div>
-                                    <!--C-row end-->
-                                    <!---->
-                                    <div id="D-row" class="row">
-                                        <div id="D-col-1" class="col-9 w-75">
-                                            <div id="D-row-1" class="row">
-                                                <div id="D-col-1a" class="col-12 justify-content-center my-auto d-flex">
-                                                    <!-- Tableau Map #temidolan-->
-                                                    <div class='tableauPlaceholder' id='viz1606673407099'
-                                                        style='position: relative'><noscript><a href='#'><img alt=' '
-                                                                    src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;SenatorsCampaignContrib&#47;Dashboard1&#47;1_rss.png'
-                                                                    style='border: none' /></a></noscript><object
-                                                            class='tableauViz' style='display:none;'>
-                                                            <param name='host_url'
-                                                                value='https%3A%2F%2Fpublic.tableau.com%2F' />
-                                                            <param name='embed_code_version' value='3' />
-                                                            <param name='site_root' value='' />
-                                                            <param name='name'
-                                                                value='SenatorsCampaignContrib&#47;Dashboard1' />
-                                                            <param name='tabs' value='no' />
-                                                            <param name='toolbar' value='yes' />
-                                                            <param name='static_image'
-                                                                value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;SenatorsCampaignContrib&#47;Dashboard1&#47;1.png' />
-                                                            <param name='animate_transition' value='yes' />
-                                                            <param name='display_static_image' value='yes' />
-                                                            <param name='display_spinner' value='yes' />
-                                                            <param name='display_overlay' value='yes' />
-                                                            <param name='display_count' value='yes' />
-                                                            <param name='language' value='en' />
-                                                            <param name='filter' value='publish=yes' /></object></div>
-                                                    <!-- End Tableau Map code #temidolan-->
-                                                    <!--<div id="USA_Map"></div>-->
-                                                </div>
+                                            <button class="btn btn-secondary btn-sm dropdown-toggle ml" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Analysis
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                ...
+                                            </div>
+                                            </body>
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+</script> -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<script src="../static/js/heran.js"></script>
+<!--Tableau Chart code-->
+<script type='text/javascript'>
+    var divElement = document.getElementById('viz1606673407099');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.minWidth = '223px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '184px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.minWidth = '223px';
+        vizElement.style.maxWidth = '100%';
+        vizElement.style.minHeight = '184px';
+        vizElement.style.maxHeight = (divElement.offsetWidth * 0.75) + 'px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '727px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src =
+        'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+</html>
+                                            <button class="btn btn-secondary btn-sm dropdown-toggle ml" type="button"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                Team
+                                            </button>
+                                            <div class="dropdown-menu">
+                                                ...
+                                            </div>
+                                            <form class="form-inline"
+                                                action="https://www.senate.gov/general/search/search_central_solr.cfm?q&x=14&y=16"
+                                                method="GET" target="_blank">
+                                                <input type="text" name="q" placeholder="Senator Search" alt="GO"
+                                                    href='' class=gsResultURL>
+                                                <input type="submit" value="Senator Search">
+
+
+                                            </form>
+                                        </div>
+                                    </nav>
+                                    <!--</div> closing 'c' div un-needed-->
+                                </div>
+                                <!--C-row end-->
+                                <!---->
+                                <div id="D-row" class="row">
+                                    <div id="D-col-1" class="col-9 w-75">
+                                        <div id="D-row-1" class="row">
+                                            <div id="D-col-1a" class="col-12 justify-content-center my-auto d-flex">
+                                                <!-- Tableau Map #temidolan-->
+                                                <div class='tableauPlaceholder' id='viz1606673407099'
+                                                    style='position: relative'><noscript><a href='#'><img alt=' '
+                                                                src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;SenatorsCampaignContrib&#47;Dashboard1&#47;1_rss.png'
+                                                                style='border: none' /></a></noscript><object
+                                                        class='tableauViz' style='display:none;'>
+                                                        <param name='host_url'
+                                                            value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                                        <param name='embed_code_version' value='3' />
+                                                        <param name='site_root' value='' />
+                                                        <param name='name'
+                                                            value='SenatorsCampaignContrib&#47;Dashboard1' />
+                                                        <param name='tabs' value='no' />
+                                                        <param name='toolbar' value='yes' />
+                                                        <param name='static_image'
+                                                            value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Se&#47;SenatorsCampaignContrib&#47;Dashboard1&#47;1.png' />
+                                                        <param name='animate_transition' value='yes' />
+                                                        <param name='display_static_image' value='yes' />
+                                                        <param name='display_spinner' value='yes' />
+                                                        <param name='display_overlay' value='yes' />
+                                                        <param name='display_count' value='yes' />
+                                                        <param name='language' value='en' />
+                                                        <param name='filter' value='publish=yes' /></object></div>
+                                                <!-- End Tableau Map code #temidolan-->
+                                                <!--<div id="USA_Map"></div>-->
                                             </div>
                                         </div>
-                                        <div id="D-col-2" class="col-3 w-25">
-                                            <div id="D-row-2a" class="row">
-                                                <div id="D-col-2a" class="col-12">
-                                                    <div style="height: 300px;overflow: scroll;">
-                                                        <div id="votersTable"
-                                                            class="table-wrapper-scroll-y custom-scrollbar">
-                                                            <table id="TableScroll"
-                                                                class="table table-hover table-bordered table-sm mb-0 table-striped"
-                                                                cellspacing="0" width="100%">
-                                                                <div id='insertData'>
-                                                                    <thead>
-                                                                        <tr>
-                                                                            <th class='th-sm' scope="col">Senator</th>
-                                                                            <th class='th-sm' scope="col">State</th>
-                                                                            <th class='th-sm' scope="col">Votes
-                                                                            </th>
-                                                                            <th class='th-sm' scope="col">Committee</th>
-                                                                            <th class='th-sm' scope="col">Contributions
-                                                                            </th>
-                                                                        </tr>
-                                                                    </thead>
-                                                                    <tbody>
-                                                                    </tbody>
-                                                                </div>
-                                                            </table>
-                                                        </div>
+                                    </div>
+                                    <div id="D-col-2" class="col-3 w-25">
+                                        <div id="D-row-2a" class="row">
+                                            <div id="D-col-2a" class="col-12">
+                                                <div style="height: 300px;overflow: scroll;">
+                                                    <div id="votersTable"
+                                                        class="table-wrapper-scroll-y custom-scrollbar">
+                                                        <table id="TableScroll"
+                                                            class="table table-hover table-bordered table-sm mb-0 table-striped"
+                                                            cellspacing="0" width="100%">
+                                                            <div id='insertData'>
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th class='th-sm' scope="col">Senator</th>
+                                                                        <th class='th-sm' scope="col">State</th>
+                                                                        <th class='th-sm' scope="col">Votes
+                                                                        </th>
+                                                                        <th class='th-sm' scope="col">Committee</th>
+                                                                        <th class='th-sm' scope="col">Contributions
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                </tbody>
+                                                            </div>
+                                                        </table>
                                                     </div>
-                                                    <p id='tableText'
-                                                        class='font-italic text-center font-weight-light text-muted text-small'>
-                                                        some words about table<br>
-                                                        some more words about table</p>
                                                 </div>
+                                                <p id='tableText'
+                                                    class='font-italic text-center font-weight-light text-muted text-small'>
+                                                    some words about table<br>
+                                                    some more words about table</p>
                                             </div>
-                                            <!-- End Table -->
-                                            <div id="D-row-2b" class="row">
-                                                <div id="D-col-2b" class="col-12 justify-content-center d-flex">
-                                                    <div id="pieChairs">
-                                                        <p id='pieText'
-                                                            class="font-italic text-center font-weight-light text-small">
-                                                            <br>PieChart</p>
-                                                        <div class="dropdown">
+                                        </div>
+                                        <!-- End Table -->
+                                        <div id="D-row-2b" class="row">
+                                            <div id="D-col-2b" class="col-12 justify-content-center d-flex">
+                                                <div id="pieChairs">
+                                                    <p id='pieText'
+                                                        class="font-italic text-center font-weight-light text-small">
+                                                        <div id="plot" class=>
+                                                            <select id="Dropdown11" onchange="fiteredby_party(this.value)" class="dropdown-menu-center" style="margin-left: 49%">
+                                                                <option value="">All Senators</option>
+                                                                <option value="Democrat">Chairs</option>
+                                                                <option value="Republican">Ranking</option>
+                                                            </select>
+                                                        </div>
+                                                        
+                                                        <br>PieChart</p>
+                                                    <!-- <div class="dropdown">
                                                             <button class="btn btn-secondary dropdown-toggle"
                                                                 type="button" id="dropdownMenuButton"
                                                                 data-toggle="dropdown" aria-haspopup="true"
@@ -184,10 +235,13 @@
                                                                 <a class="dropdown-item" href="#">Chairs</a>
                                                                 <a class="dropdown-item" href="#">Ranking Members</a>
                                                             </div>
-                                                        </div>
+                                                     </div>  -->
+                                                    <!-- </div> -->
+                                                    
 
 
-                                                        <!-- <div id="pieButton" class="dropdown">
+
+                                                    <!-- <div id="pieButton" class="dropdown">
                                                         <button class="btn btn-sm btn-secondary dropdown-toggle"
                                                             type="button" id="dropdownMenuButton" data-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
@@ -200,10 +254,10 @@
                                                                 href="#">Ranking Members</a>
                                                         </div>
                                                     </div> -->
-                                                    </div>
                                                 </div>
                                             </div>
-                                            <!--Second piechart stacked 
+                                        </div>
+                                        <!--Second piechart stacked 
                                             <div id="D-row-2c" class="row">
                                             <div id="D-col-2c" class="col-12 justify-content-center d-flex">
                                                 <div id="pieRanking">
@@ -212,38 +266,38 @@
                                                 </div>
                                             </div>
                                         </div> -->
-                                        </div>
                                     </div>
-                                    <!-- D-row End-->
-                                    <!-- E- Row Begin-->
-                                    <div id="E-row-a" class="row">
-                                        <div id="E-col-1" class="col-6 justify-content-left">
-                                            <div id='E-row-b' class="row">
-                                                <div id="col-12" class="col-12 d-flex border-right">
-                                                    <!-- <p>Total Contributions Bar Graph</p> -->
-                                                    <div id="contribBar">
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="E-col-2" class="col-6 justify-content-right border-left">
-                                            <div id='E-row' class='row'>
-                                                <div id="col-12" class="col-12">
-                                                    <!-- <p>Highest Contributions Table</p> -->
-                                                    <div id="contribCor">
-                                                        <p></p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- end right side-->
-                                    <!-- b end-->
                                 </div>
-                                <!-- 1B-row end-->
+                                <!-- D-row End-->
+                                <!-- E- Row Begin-->
+                                <div id="E-row-a" class="row">
+                                    <div id="E-col-1" class="col-6 justify-content-left">
+                                        <div id='E-row-b' class="row">
+                                            <div id="col-12" class="col-12 d-flex border-right">
+                                                <!-- <p>Total Contributions Bar Graph</p> -->
+                                                <div id="contribBar">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="E-col-2" class="col-6 justify-content-right border-left">
+                                        <div id='E-row' class='row'>
+                                            <div id="col-12" class="col-12">
+                                                <!-- <p>Highest Contributions Table</p> -->
+                                                <div id="contribCor">
+                                                    <p></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- end right side-->
+                                <!-- b end-->
                             </div>
-                            <!-- col-1B end-->
+                            <!-- 1B-row end-->
+                        </div>
+                        <!-- col-1B end-->
                     </div>
 
                     <!--row-1 end-->
@@ -258,8 +312,6 @@
 
 
 
-
-
 </body>
 
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -268,13 +320,13 @@
 <script src="http://code.jquery.com/jquery-latest.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-</script>
+    </script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
     integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-</script>
+    </script>
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
-<script src="../static/js/app.js"></script>
+<script src="../static/js/heran.js"></script>
 <!--Tableau Chart code-->
 <script type='text/javascript'>
     var divElement = document.getElementById('viz1606673407099');
