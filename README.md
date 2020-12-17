@@ -7,13 +7,13 @@ Using Adobe Indesign, HTML/CSS and JavaScript to layout a data dashboard website
 
 ![Layout](https://raw.githubusercontent.com/ph1-618O/senatorsSiteDesign/main/main_page.png)
 
-Questions ::
+# Questions ::
 Is there a correlation between US Senate campaign contributions raised and votes received?
 Is there a correlation between US Senate campaign contributions and committee Senatorial appointments?
 
-References:
-[Contributions Data](https://www.opensecrets.org) acquired from Open Secrets. org
-[Vote Data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PEJ5QU)
+# References:
+- [Contributions Data](https://www.opensecrets.org) acquired from Open Secrets. org
+- [Vote Data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PEJ5QU)
   This data included returns from state level elections to the U.S. Senate from 1976 to 2018.
-[Committee Information](https://www.senate.gov/committees/)
+- [Committee Information](https://www.senate.gov/committees/)
   From senate.gov a listing of all the chairs and ranking members of the senate committees.
