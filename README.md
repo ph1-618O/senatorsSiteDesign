@@ -8,8 +8,9 @@ Using Adobe Indesign, HTML/CSS and JavaScript to layout a data dashboard website
 ![Layout](https://raw.githubusercontent.com/ph1-618O/senatorsSiteDesign/main/main_page.png)
 
 # Questions ::
-Is there a correlation between US Senate campaign contributions raised and votes received?
-Is there a correlation between US Senate campaign contributions and committee Senatorial appointments?
+- Is there a correlation between US Senate campaign contributions raised and votes received?
+
+- Is there a correlation between US Senate campaign contributions and committee Senatorial appointments?
 
 # References:
 - [Contributions Data](https://www.opensecrets.org):: acquired from Open Secrets. org
