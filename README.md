@@ -16,4 +16,4 @@ Is there a correlation between US Senate campaign contributions and committee Se
 - [Vote Data](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/PEJ5QU)
   Returns from state level elections to the U.S. Senate from 1976 to 2018.
 - [Committee Information](https://www.senate.gov/committees/)
-  From senate.gov a listing of all the chairs and ranking members of the senate committees.
+  A listing of all the chairs and ranking members of the senate committees from senate.gov
